@@ -68,6 +68,18 @@ A RESTful backend system for managing users, patients, doctors, and patient-doct
 python manage.py test
 ```
 
+## React Frontend (`frontend/`)
+
+A JavaScript React frontend built with Vite is located in `frontend/`:
+
+```powershell
+cd frontend
+npm install
+npm run dev
+```
+
+The Vite dev server runs on `http://localhost:5173` and proxies `/api` requests to the Django backend at `http://127.0.0.1:8000`.
+
 ## Postman
 
 Import `postman_collection.json` into Postman, set `base_url` (default `http://127.0.0.1:8000`), and run `Auth -> Login` first to populate `access_token`.
